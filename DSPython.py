@@ -20,7 +20,15 @@ URL="https://api.darksky.net/forecast/"
 # Change the below for your latitude and longitude, Below figures are for the centre of Brussels, Belgium.
 LAT= 50.8467
 LNG= 4.3526
- 
+
+# Change the below for different measurement units, values are :
+# auto = automatically select based upon geographical region
+# ca = same as si, except windSpeed is in kilometers per hour
+# uk2 = same as si, except that nearestStormDistance and visibility are in miles and windSpeed is in miles per hour
+# us = Imperial units
+# si : SI units 
+UTS="si"
+
 directions = ["N", "NNE", "ENE", "E", "ESE", "SSE", "S", "SSW", "WSW", "W", "WNW", "NNW"]
  
 def bearing_to_direction(bearing):
@@ -49,7 +57,7 @@ if cached:
     print "::: Using cached data..."
 else:
     print "::: Reloading cache..."
-    req = urllib2.Request(URL+API+"/"+("%f,%f"%(LAT,LNG)))
+    req = urllib2.Request(URL+API+"/"+("%f,%f"%(LAT,LNG)+"?units="+UTS))
     response = urllib2.urlopen(req)
     parsed = json.loads(response.read())
     f = open("WEATHER.cache", "w")

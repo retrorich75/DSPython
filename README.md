@@ -4,6 +4,7 @@ Simple Python script to read the Weather from DarkSky.net (original source http:
 Example run on Raspberry Pi Console (output in °F)
 
 pi@pidspy:/opt/ds $ sudo python DSPython.py
+
 ::: 2016-11-16 20:43:54
 ::: Conditions: Clear
 ::: Temperature: 50.3°
@@ -24,3 +25,37 @@ pi@pidspy:/opt/ds $ sudo python DSPython.py
         05:00 Light Rain 45.6°
         06:00 Light Rain 46.1°
         07:00 Light Rain 46.0°
+
+
+Example run on Raspberry Pi Console (output in °C)
+
+pi@pidspy:/opt/ds $ sudo python DSPython.py
+::: Using cached data...
+::: 2016-11-17 10:52:53
+::: Conditions: Partly Cloudy
+::: Temperature: 9.4°
+::: Dew Point: 8.1°
+::: Humidity: 91.0%
+::: Wind: 4 mph WSW
+::: High: 11.0°
+::: Low: 9.2°
+	10:00 Drizzle 9.4°
+	11:00 Drizzle 9.4°
+	12:00 Drizzle 9.9°
+	13:00 Drizzle 10.2°
+	14:00 Light Rain 10.3°
+	15:00 Light Rain 10.4°
+	16:00 Light Rain 10.4°
+	17:00 Light Rain 10.7°
+	18:00 Light Rain and Breezy 10.9°
+	19:00 Light Rain and Breezy 11.0°
+	20:00 Light Rain and Breezy 10.8°
+	21:00 Light Rain and Breezy 10.5°
+
+
+
+
+
+
+
+

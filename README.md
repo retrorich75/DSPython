@@ -1,4 +1,4 @@
-# DSPython
+﻿# DSPython
 Simple Python script to read the Weather from DarkSky.net (original source http://brainwagon.org/2014/07/08/some-example-python-code-to-fetch-weather-forecasts/)
 
 Example run on Raspberry Pi Console (output in °F)

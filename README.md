@@ -54,3 +54,4 @@ pi@pidspy:/opt/ds $ sudo python DSPython.py
 	20:00 Light Rain and Breezy 10.8°
 	21:00 Light Rain and Breezy 10.5°
 	```
+	

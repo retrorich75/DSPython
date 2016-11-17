@@ -1,8 +1,9 @@
 ﻿# DSPython
 Simple Python script to read the Weather from DarkSky.net (original source http://brainwagon.org/2014/07/08/some-example-python-code-to-fetch-weather-forecasts/)
 
-Example run on Raspberry Pi Console (output in °F)
+## Example run on Raspberry Pi Console (output in °F)
 
+```
 pi@pidspy:/opt/ds $ sudo python DSPython.py
 
 ::: 2016-11-16 20:43:54
@@ -24,11 +25,12 @@ pi@pidspy:/opt/ds $ sudo python DSPython.py
         04:00 Light Rain 44.8°
         05:00 Light Rain 45.6°
         06:00 Light Rain 46.1°
-        07:00 Light Rain 46.0°
+        07:00 Light Rain 46.0° 
+```
 
+## Example run on Raspberry Pi Console (output in °C)
 
-Example run on Raspberry Pi Console (output in °C)
-
+```
 pi@pidspy:/opt/ds $ sudo python DSPython.py
 ::: Using cached data...
 ::: 2016-11-17 10:52:53
@@ -51,11 +53,4 @@ pi@pidspy:/opt/ds $ sudo python DSPython.py
 	19:00 Light Rain and Breezy 11.0°
 	20:00 Light Rain and Breezy 10.8°
 	21:00 Light Rain and Breezy 10.5°
-
-
-
-
-
-
-
-
+	```

@@ -68,6 +68,7 @@ c = parsed["currently"]
 print ":::", time.strftime("%F %T", time.localtime(c["time"]))
 print "::: Conditions:", c["summary"]
 print "::: Temperature:", ("%.1f" % c["temperature"])+u"\u00B0"
+print "::: Feels Like:", ("%.1f" % c["apparentTemperature"])+u"\u00B0"
 print "::: Dew Point:", ("%.1f" % c["dewPoint"])+u"\u00B0"
 print "::: Humidity:", ("%4.1f%%" % (c["humidity"]*100.))
 print "::: Wind:", int(round(c["windSpeed"])), "mph", bearing_to_direction(c["windBearing"])
